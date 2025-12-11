@@ -11,7 +11,7 @@ git submodule update
 
 set -e 
 cd `dirname $0`
-
+echo "BR2_EXTERNAL = $(BR2_EXTERNAL)"
 if [ ! -e buildroot/.config ]
 then
 	echo "MISSING BUILDROOT CONFIGURATION FILE"
